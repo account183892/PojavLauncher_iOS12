@@ -81,7 +81,7 @@ jobs:
           git push
           
       - name: Get JRE8
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
           workflow: build.yml
@@ -92,7 +92,7 @@ jobs:
           name: jre8-ios-aarch64
 
       - name: Get JRE17
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
           workflow: build.yml
